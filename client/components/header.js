@@ -6,12 +6,12 @@ const Header = () => {
 
 
   return (
-    <div className="border-2 bg-red-600">
-        <div>
+    <div className="flex justify-around border-2 bg-red-600">
+        <div id="brand-name">
             <Link to="/"> Main </Link> 
             </div>
-        <div>
-            Itogo:<Link to="/basket">Basket</Link>
+        <div id="order-count">
+            <Link to="/basket">Basket</Link>
         </div>
         <div>
             <button type="button">USD</button>
@@ -19,8 +19,8 @@ const Header = () => {
             <button type="button">CAD</button>
         </div>
         <div>Sort by
-            <button type="button">price</button>
-            <button type="button">name</button>
+            <button type="button" id="sort-price">price</button>
+            <button type="button" id="sort-name">name</button>
         </div>
         <div>
             Summ of products
